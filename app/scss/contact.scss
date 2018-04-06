@@ -1,0 +1,80 @@
+@import "variables";
+
+.contact {
+  background-image: url("../images/contact-background.png");
+  position: relative;
+}
+
+.google-map {
+  position: absolute;
+  height: 100vh;
+  width: 55vw;
+  top: 0;
+  right: 0;
+  &--form {
+    position: absolute;
+    background: $form-background-color;
+    bottom: 15vh;
+    left: 53vw;
+    width: 25vw;
+    padding: 30px;
+    font-family: 'Lato', sans-serif;
+    .form-group {
+      padding-bottom: 8px;
+    }
+    input, textarea {
+      font-size: 0.6rem;
+      letter-spacing: 1px;
+    }
+
+    textarea {
+      resize: none;
+    }
+    .button--submit {
+      border: 1px solid transparent;
+      background-color: $button-submit-background-color;
+      color: $button-submit-font-color;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.55rem;
+      letter-spacing: 1px;
+      padding: 10px 20px;
+      transition: all 0.2s ease-in;
+      &:hover {
+        color: $button-submit-font-color-invert;
+        background-color: $button-submit-background-color-invert;
+        border: 1px solid $button-submit-hover-border-color;
+      }
+    }
+  }
+}
+
+.contact-info {
+  margin-top: 16vh;
+  margin-left: 40px;
+  &--el {
+    margin-bottom: 30px;
+    position: relative;
+    &--header {
+      color: $contact-header-font;
+      font-family: 'Nunito', sans-serif;
+      font-size: 0.65rem;
+      letter-spacing: 1px;
+      margin: 0;
+    }
+    &--desc {
+      color: $contact-desc-font;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.6rem;
+      letter-spacing: 1px;
+      margin-top: 4px;
+      line-height: 18px;
+    }
+    & &--icon {
+      color: $contact-header-font;
+      position: absolute;
+      top: -3px;
+      left: -40px;
+      font-size: 1rem;
+    }
+  }
+}

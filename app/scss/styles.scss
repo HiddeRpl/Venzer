@@ -1,0 +1,179 @@
+@import "variables";
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato.ttf")
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito/Nunito.ttf")
+}
+
+html {
+  font-size: 18px;
+}
+
+a, button {
+  outline: none;
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 0px;  /* remove scrollbar space */
+  background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.valign-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.slide {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.pagination {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 350px;
+  left: 32px;
+  top: 50%;
+  margin-top: -175px;
+  user-select: none;
+  cursor: default;
+  &--page-number {
+    color: $pagination-page-number-color;
+    font-size: 2.2rem;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 4px;
+    &__invert {
+      color: $pagination-page-number-color-invert;
+    }
+  }
+  &--separator {
+    height: 80px;
+    width: 2px;
+    background-color: $pagination-separator;
+    &__invert {
+      background-color: $pagination-separator-invert;
+    }
+  }
+  &--dot {
+    height: 9px;
+    width: 9px;
+    background-color: $pagination-dot;
+    border-radius: 100%;
+    &__invert {
+      background-color: $pagination-dot-invert;
+    }
+    &__active {
+      @extend .pagination--dot;
+      background-color: $pagination-dot-active;
+      position: relative;
+      &__invert {
+        background-color: $pagination-dot-active-invert;
+      }
+    }
+    &--text {
+      position: absolute;
+      color: $pagination-text;
+      font-family: 'Nunito', sans-serif;
+      left: 28px;
+      top: -1px;
+      font-size: 0.5rem;
+      letter-spacing: 1px;
+      width: 3.5rem;
+      &__invert {
+        color: $pagination-text-invert;
+      }
+    }
+  }
+}
+
+.title {
+  font-family: 'Nunito', sans-serif;
+  font-size: 2.1rem;
+  font-weight: bold;
+  letter-spacing: 24px;
+  color: $title-font-color;
+  &__invert {
+    color: $title-font-color-invert;
+  }
+  &__accent {
+    color: $title-font-color-accent;
+  }
+}
+
+.sub-title {
+  font-size: 0.9em;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 5px;
+  color: $subtitle-font-color;
+  margin-bottom: 50px;
+}
+
+.description {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.5rem;
+  line-height: 0.9rem;
+  position: relative;
+  max-width: 20rem;
+  letter-spacing: normal;
+  &--separator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0.2em;
+    width: 75%;
+    background-color: $description-separator-color;
+  }
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-family: 'Nunito', sans-serif;
+  color: $section-title-font-color;
+  letter-spacing: 0.5rem;
+  padding-bottom: 0.9rem;
+  margin-bottom: 0;
+  &__invert {
+    color: $section-title-font-color-invert;
+  }
+  &--separator {
+    width: 14rem;
+    border: 1.2px solid $border-color;
+  }
+}
+
+@import "navbar";
+@import "homepage";
+@import "aboutus";
+@import "service";
+@import "portfolio";
+@import "blog";
+@import "contact";
+@import "animations";
+@import "media";

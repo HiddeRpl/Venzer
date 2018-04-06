@@ -1,0 +1,10 @@
+@import "variables";
+
+.about-us {
+  background-image: url('../images/aboutus-background.png');
+}
+
+.description__aboutus {
+  margin-top: 12vh;
+  color: $description-color;
+}

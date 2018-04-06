@@ -1,0 +1,97 @@
+@import "variables";
+
+.home-page {
+  background-image: url('../images/header-brackground.jpg');
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 32px;
+  width: auto;
+  height: 25px;
+  user-select: none;
+}
+
+.header--anchor {
+  font-family: 'Nunito', sans-serif;
+  width: 25%;
+  border-top: 2px solid $border-color;
+  padding-top: 18px;
+  font-size: 0.5rem;
+  color: $header-anchor-color;
+
+  a {
+    &:hover i {
+      animation: paddingMove 0.5s linear;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  i {
+    transition: 0.1s padding-left linear;
+    color: $arrow-color;
+    padding-left: 7px;
+  }
+}
+
+.social-media {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 180px;
+  right: 29px;
+  top: 50%;
+  bottom: 50%;
+  margin-top: -90px;
+  a:hover i.social-media--icon {
+    color: $social-media-icon-hover;
+  }
+}
+
+i.social-media--icon {
+  font-size: 0.8rem;
+  color: $social-media-icon;
+  transition: 0.1s color linear;
+}
+
+.scroller {
+  position: absolute;
+  bottom: 40px;
+  left: 24.5%;
+  display: flex;
+  user-select: none;
+  cursor: default;
+  transform: rotate(90deg);
+
+  &--mouse {
+    border: 1.5px solid $scroller-mouse-color;
+    background-color: transparent;
+    width: 22px;
+    height: 14px;
+    align-self: flex-end;
+    margin-right: 25px;
+    border-radius: 20px;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 5px;
+      border: 1px solid $scroller-mouse-color;
+      top: 4.5px;
+      left: 4px;
+      animation: scrollMe 1s linear infinite;
+    }
+  }
+  &--text {
+    font-family: 'Nunito', sans-serif;
+    color: $scroller-text-color;
+    border-bottom: 1px solid $scroller-line-color;
+    padding-bottom: 10px;
+    padding-right: 130px;
+    font-size: 0.6rem;
+  }
+}

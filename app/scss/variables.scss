@@ -1,0 +1,77 @@
+$page-main-color: #b3b3b3;
+$page-sub-color: #FF4200;
+$page-third-color: #FFF;
+$page-fourth-color: #333;
+$page-fifth-color: #000;
+$page-sixth-color: #999;
+
+$title-font-color: $page-third-color;
+$title-font-color-invert: $page-fifth-color;
+$title-font-color-accent: $page-sub-color;
+
+$section-title-font-color: $page-third-color;
+$section-title-font-color-invert: $page-fifth-color;
+$subtitle-font-color: $page-main-color;
+$header-anchor-color: $page-third-color;
+
+$description-color: $page-sixth-color;
+$description-separator-color: #ededed;
+
+$border-color: $page-sub-color;
+
+$arrow-color: $page-sub-color;
+
+$navbar-background: $page-third-color;
+$navigation-color: #333333;
+$navigation-underline: $page-sub-color;
+$navigation-underline-start: $navigation-color;
+
+$hamburger-color: $page-main-color;
+$hamburger-color-active: $page-sub-color;
+
+$social-media-icon: $page-main-color;
+$social-media-icon-hover: $page-sub-color;
+
+$pagination-active: $page-third-color;
+$pagination-active-invert: $page-fifth-color;
+$pagination-inactive: #737373;
+$pagination-inactive-invert: #e6e6e6;
+$pagination-page-number-color: $pagination-active;
+$pagination-page-number-color-invert: $pagination-active-invert;
+$pagination-dot-active: $pagination-active;
+$pagination-dot-active-invert: $pagination-active-invert;
+$pagination-dot: $pagination-inactive;
+$pagination-dot-invert: $pagination-inactive-invert;
+$pagination-separator: $pagination-active;
+$pagination-separator-invert: $pagination-active-invert;
+$pagination-text: $pagination-active;
+$pagination-text-invert: $pagination-active-invert;
+
+$scroller-mouse-color: $page-third-color;
+$scroller-line-color: #737373;
+$scroller-text-color: #737373;
+
+$services-element: #737373;
+$services-element__active: $page-main-color;
+$services-description-firstletter: #ff4200;
+
+$sidebar-color: $page-sixth-color;
+$sidebar-color-active: #f7f7f7;
+$portfolio-description-color: $page-sixth-color;
+$portfolio-header-color: #f7f7f7;
+$link-button: $page-sub-color;
+$link-background: #f7f7f7;
+
+$blog-description-color: $page-sixth-color;
+$blog-news-hover: #f7f7f7;
+$blog-news-separator: #ededed;
+
+$form-background-color: $page-third-color;
+$button-submit-background-color: $page-sub-color;
+$button-submit-font-color: $page-third-color;
+$button-submit-background-color-invert: $page-third-color;
+$button-submit-font-color-invert: $page-sub-color;
+$button-submit-hover-border-color: $page-sub-color;
+
+$contact-header-font: $page-main-color;
+$contact-desc-font: $page-sixth-color;

@@ -1,0 +1,56 @@
+@import "variables";
+
+.services {
+  background-image: url('../images/service-background.png');
+}
+
+.services-catalog {
+  margin-top: 18vh;
+  &--element {
+    font-family: Nunito, sans-serif;
+    color: $services-element;
+    margin-bottom: 1rem;
+    letter-spacing: 0.3rem;
+    cursor: pointer;
+    transition: 0.2s color ease;
+    width: 20em;
+    &:hover, &:focus {
+      color: $services-element__active;
+      outline: none;
+    }
+  }
+  &--description {
+    width: 14rem;
+    opacity: 0;
+    position: absolute;
+    bottom: -25vh;
+    right: 35vh;
+    transition: opacity 0.2s linear;
+    cursor: default;
+    &--title {
+      font-family: Nunito, sans-serif;
+      color: $services-element__active;
+      letter-spacing: 0.3rem;
+      &--firstletter {
+        color: $services-description-firstletter;
+        font-size: 5.5em;
+        position: absolute;
+        z-index: 1;
+        opacity: 0.2;
+        top: -4vh;
+        left: -2vw;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+    }
+    &--desc {
+      color: $services-element;
+    }
+  }
+}
+
+.services-catalog--element:focus > .services-catalog--description {
+  opacity: 1;
+}
